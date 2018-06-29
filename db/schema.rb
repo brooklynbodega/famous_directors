@@ -16,13 +16,20 @@ ActiveRecord::Schema.define(version: 2018_06_29_161007) do
   enable_extension "plpgsql"
 
   create_table "directors", force: :cascade do |t|
+    t.string "name"
+    t.string "date_of_birth"
+    t.string "film_style"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "films", force: :cascade do |t|
+    t.string "title"
+    t.string "release_date"
+    t.bigint "director_id_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["director_id_id"], name: "index_films_on_director_id_id"
   end
 
 end

@@ -1,0 +1,12 @@
+<h1>Directors</h1>
+ <tbody>
+   <% @directors.each do |director| %>
+     <tr>
+       <td><%= director.name %></td>
+       <td><%= director.date_of_birth%></td>
+     </tr>
+   <% end %>
+ </tbody>
+</table>
+
+<br>

@@ -6,38 +6,38 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-directors = Director.create!([
+Director.create!([
     {
         name: 'Akira Kurosawa',
-        date_of_birth: 3/23/1910,
+        date_of_birth: '3/23/1910',
         film_style: 'geometric'
     },
     {
         name: 'Ava DuVernay',
-        date_of_birth: 8/24/1972,
+        date_of_birth: '8/24/1972',
         film_style: 'call to action'
     },
     {
         name: 'Sofia Coppola',
-        date_of_birth: 5/14/1971,
+        date_of_birth: '5/14/1971',
         film_style: 'dreamlike'
     }
 ])
 
-films = Film.create!([
-    {
-        title: "Lost in Translation",
-        release_date: 10/03/2003,
-        director_id: 3
-    },
-    {
-        title: "Wrinkle in Time",
-        release_date: 2/26/2018,
-        director_id: 2
-    },
-    {
-        title: "Rashoman",
-        release_date: 8/25/1950,
-        director_id: 1
-    },
-])
+# Film.create!([
+#     {
+#         title: "Lost in Translation",
+#         release_date: '10/03/2003',
+#         director: 3
+#     },
+#     {
+#         title: "Wrinkle in Time",
+#         release_date: '2/26/2018',
+#         director: 2
+#     },
+#     {
+#         title: "Rashoman",
+#         release_date: '8/25/1950',
+#         director: 1
+#     },
+# ])
